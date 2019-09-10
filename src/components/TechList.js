@@ -18,6 +18,12 @@ class TechList extends Component {
     Preciso do @babel/plugin-proposal-class-properties
     */
 
+    // Posso definir default props da mesma forma do componente feito como função
+    // Mas também posso fazer assim:
+    static defaultProps = {
+        tech: 'Oculto'
+    };
+
     state = {
         newTech: '',
         techs: [

@@ -10,3 +10,8 @@ yarn add @babel/plugin-proposal-class-properties -D
 ```
 
 o --mode development deixa o arquivo bundle um pouco mais legível. Com o --mode production fica ilegível, mas mais leve.
+
+## Prop types é uma forma de validar as propriedades que um componente recebe
+```
+yarn add prop-types
+```
