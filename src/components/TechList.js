@@ -41,6 +41,13 @@ class TechList extends Component {
 
         // spread operator ...
         this.setState({ techs: [...this.state.techs, this.state.newTech] });
+
+        this.state.newTech = "";
+    }
+
+    handleDelete = (tech) => {
+        this.setState({ techs: this.state.techs.filter(t => t !== tech) });
+        console.log(tech);
     }
 
     render() {
@@ -49,7 +56,12 @@ class TechList extends Component {
             <form onSubmit={this.handleSubmit}>
                 <h1>{this.state.newTech}</h1>
                 <ul>
-                    {this.state.techs.map(tech => <li key={tech}>{tech}</li>)}
+                    {this.state.techs.map(tech => (
+                        <li key={tech}>
+                            {tech}
+                            <button onClick={() => this.handleDelete(tech)} type="button">Remover</button>
+                        </li>
+                    ))}
                 </ul>
 
                 <input
