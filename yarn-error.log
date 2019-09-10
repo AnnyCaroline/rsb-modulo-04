@@ -1,0 +1,41 @@
+Arguments: 
+  /usr/bin/node /usr/local/bin/yarn add @babel/core @babel/preset-end @babel/preset-react webpack webpack-cli
+
+PATH: 
+  /home/anny/.local/bin:/home/anny/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/anny/Android/Sdk/tools:/home/anny/Android/Sdk/platform-tools:/home/anny/Android/Sdk/tools:/home/anny/Android/Sdk/platform-tools
+
+Yarn version: 
+  1.17.3
+
+Node version: 
+  8.10.0
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/@babel%2fpreset-end: Not found
+      at Request.params.callback [as _callback] (/usr/local/lib/node_modules/yarn/lib/cli.js:66830:18)
+      at Request.self.callback (/usr/local/lib/node_modules/yarn/lib/cli.js:140464:22)
+      at emitTwo (events.js:126:13)
+      at Request.emit (events.js:214:7)
+      at Request.<anonymous> (/usr/local/lib/node_modules/yarn/lib/cli.js:141436:10)
+      at emitOne (events.js:116:13)
+      at Request.emit (events.js:211:7)
+      at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/yarn/lib/cli.js:141358:12)
+      at Object.onceWrapper (events.js:313:30)
+      at emitNone (events.js:111:20)
+
+npm manifest: 
+  {
+    "name": "modulo04",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
